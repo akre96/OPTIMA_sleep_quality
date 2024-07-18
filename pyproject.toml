@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "optima-sleep-quality"
+version = "0.1.0"
+description = "Comparison of sleep quality from consumer digital health devices to self-report and neurocognitive performance in those with depression"
+authors = ["Samir Akre <samir.akre@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+numpy = "^2.0.0"
+scikit-learn = "^1.5.1"
+matplotlib = "^3.9.1"
+seaborn = "^0.13.2"
+pingouin = "^0.5.4"
+tqdm = "^4.66.4"
+shap = "^0.46.0"
+mhealth-feature-generation = {git = "https://github.com/akre96/mHealth-feature-generation"}
+predict-selfreport-items = {path = "/Users/sakre/Code/dgc/WellcomeLeap/predict_selfreport_items", develop = true}
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
